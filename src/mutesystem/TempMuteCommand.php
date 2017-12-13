@@ -2,6 +2,7 @@
 
 namespace mutesystem;
 
+use mutesystem\Manager;
 use mutesystem\translation\Translation;
 use mutesystem\util\date\Countdown;
 use DateTime;
