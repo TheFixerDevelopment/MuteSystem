@@ -2,9 +2,6 @@
 
 namespace bansystem\command;
 
-use bansystem\Manager;
-use bansystem\translation\Translation;
-use bansystem\util\ArrayPage;
 use InvalidArgumentException;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -15,8 +12,8 @@ class MuteListCommand extends Command {
     public function __construct() {
         parent::__construct("mutelist");
         $this->description = "Lists all the players/IP addresses muted from this server.";
-        $this->usageMessage = "/mutelist <name> | <ip> [page]";
-        $this->setPermission("bansystem.command.mutelist");
+        $this->usageMessage = "/mutelist <name> / <ip> [page]";
+        $this->setPermission("mutesystem.command.mutelist");
     }
     
     private function forEachLists(string $type) : array {
@@ -62,7 +59,7 @@ class MuteListCommand extends Command {
                         return false;
                     }
                 }
-                $sender->sendMessage(TextFormat::DARK_GREEN . "--[" . TextFormat::GREEN . "There are " . strval(count($names)) . " " . (strtolower($args[0]) == "name" ? "players" : "IP address") . " muted from this server." . TextFormat::DARK_GREEN . "]--");
+                $sender->sendMessage(TextFormat::RED . "--[" . TextFormat::DARK_RED . "There are " . strval(count($names)) . " " . (strtolower($args[0]) == "name" ? "players" : "IP address") . " muted from this server." . TextFormat::RED . "]--");
                 if (count($names) >= 1) {
                     foreach ($arrayPage->yieldFromPage($page) as $nameValue) {
                         $sender->sendMessage(TextFormat::AQUA . $nameValue);
