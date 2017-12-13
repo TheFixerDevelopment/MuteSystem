@@ -1,6 +1,6 @@
 <?php
 
-namespace bansystem\permission;
+namespace mutesystem\permission;
 
 use DateTime;
 use InvalidArgumentException;
