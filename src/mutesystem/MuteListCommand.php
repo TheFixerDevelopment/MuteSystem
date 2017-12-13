@@ -2,6 +2,9 @@
 
 namespace mutesystem;
 
+use mutesystem\Manager;
+use mutesystem\translation\Translation;
+use mutesystem\util\ArrayPage;
 use InvalidArgumentException;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
