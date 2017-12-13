@@ -1,9 +1,9 @@
 <?php
 
-namespace bansystem\command;
+namespace mutesystem;
 
-use bansystem\Manager;
-use bansystem\translation\Translation;
+use mutesystem\Manager;
+use mutesystem\translation\Translation;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\TextFormat;
