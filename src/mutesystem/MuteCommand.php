@@ -2,8 +2,6 @@
 
 namespace bansystem\command;
 
-use bansystem\Manager;
-use bansystem\translation\Translation;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\TextFormat;
@@ -14,7 +12,7 @@ class MuteCommand extends Command {
         parent::__construct("mute");
         $this->description = "Prevents the given player from sending public chat message.";
         $this->usageMessage = "/mute <player> [reason...]";
-        $this->setPermission("bansystem.command.mute");
+        $this->setPermission("mutesystem.command.mute");
     }
     
     public function execute(CommandSender $sender, string $commandLabel, array $args) {
