@@ -1,9 +1,9 @@
 <?php
 
-namespace bansystem\listener;
+namespace mutesystem\listener;
 
-use bansystem\Manager;
-use bansystem\util\date\Countdown;
+use mutesystem\Manager;
+use mutesystem\util\date\Countdown;
 use DateTime;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerChatEvent;
