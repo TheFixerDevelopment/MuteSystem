@@ -1,6 +1,6 @@
 <?php
 
-namespace bansystem\exception;
+namespace mutesystem\exception;
 
 use RuntimeException;
 
