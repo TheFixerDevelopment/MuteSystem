@@ -11,10 +11,10 @@ use pocketmine\utils\TextFormat;
 class MuteIPCommand extends Command {
     
     public function __construct() {
-        parent::__construct("mute-ip");
+        parent::__construct("muteip");
         $this->description = "Prevents the given IP address from sending public chat message.";
-        $this->usageMessage = "/mute-ip <player> <address> [reason...]";
-        $this->setPermission("bansystem.command.muteip");
+        $this->usageMessage = "/muteip <player> <address> [reason...]";
+        $this->setPermission("mutesystem.command.muteip");
     }
     
     public function execute(CommandSender $sender, string $commandLabel, array $args) {
