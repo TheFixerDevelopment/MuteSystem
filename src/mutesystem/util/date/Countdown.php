@@ -1,6 +1,6 @@
 <?php
 
-namespace bansystem\util\date;
+namespace mutesystem\util\date;
 
 use DateTime;
 use InvalidArgumentException;
@@ -18,7 +18,7 @@ class Countdown {
             $dateTime = new DateTime();
             $dateTime->setTimestamp($dateTime->getTimestamp() + intval($format));
             $this->date = $dateTime;
-            return;
+            return true;
         }
         $this->date = new DateTime();
         $second = 0;
