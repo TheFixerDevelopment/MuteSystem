@@ -87,7 +87,7 @@ class Main extends PluginBase {
             new Permission("mutesystem.command.unmuteip", "Allows the player to unmute a player via IP."),
             new Permission("mutesystem.command.mute", "Allows the player to Mute a user.", Permission::DEFAULT_OP),
             new Permission("mutesystem.command.muteip", "Allows the player to prevent the given player from sending public chat message.", Permission::DEFAULT_OP),
-            new Permission("mutesystem.command.mutelist". "Allows to see a list of muted players.
+            new Permission("mutesystem.command.mutelist". "Allows to see a list of muted players.", Permission::DEFAULT_OP),
         ));
     }
     
