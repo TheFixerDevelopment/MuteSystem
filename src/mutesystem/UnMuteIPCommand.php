@@ -11,9 +11,9 @@ use pocketmine\utils\TextFormat;
 class UnmuteIPCommand extends Command {
     
     public function __construct() {
-        parent::__construct("unmute-ip");
+        parent::__construct("unmuteip");
         $this->description = "Allows the given IP address from sending public chat message.";
-        $this->usageMessage = "/unmute-ip <address>";
+        $this->usageMessage = "/unmuteip <address>";
         $this->setPermission("bansystem.command.unmuteip");
     }
     
