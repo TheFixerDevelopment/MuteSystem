@@ -2,6 +2,8 @@
 
 namespace mutesystem;
 
+use mutesystem\Manager;
+use mutesystem\translation\Translation;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\TextFormat;
