@@ -14,9 +14,9 @@ use pocketmine\utils\TextFormat;
 class TempMuteIPCommand extends Command {
     
     public function __construct() {
-        parent::__construct("tempmute-ip");
+        parent::__construct("tempmuteip");
         $this->description = "Temporarily prevents the given IP address from sending chat message.";
-        $this->usageMessage = "/tempmute-ip <player / address> <timeFormat> [reason...]";
+        $this->usageMessage = "/tempmuteip <player / address> <timeFormat> [reason...]";
         $this->setPermission("mutesystem.command.tempmuteip");
     }
     
