@@ -2,7 +2,6 @@
 
 namespace mutesystem;
 
-use mutesystem\permission\BlockList;
 use mutesystem\permission\MuteList;
 
 class Manager {
