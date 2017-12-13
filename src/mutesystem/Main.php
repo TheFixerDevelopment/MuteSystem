@@ -66,8 +66,6 @@ class Main extends PluginBase {
     private function initializeListeners() {
         $this->registerListeners($this, array(
             new PlayerChatListener(),
-            new PlayerCommandPreproccessListener(),
-            new PlayerPreLoginListener()
         ));
     }
     
