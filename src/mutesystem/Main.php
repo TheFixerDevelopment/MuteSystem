@@ -7,7 +7,7 @@ use mutesystem\TempMuteIPCommand;
 use mutesystem\UnMuteCommand;
 use mutesystem\UnMuteIPCommand;
 use mutesystem\MuteCommand;
-use mutesystemzMuteIPCommand;
+use mutesystem\MuteIPCommand;
 use mutesystem\MuteListCommand;
 use pocketmine\event\Listener;
 use pocketmine\permission\Permission;
