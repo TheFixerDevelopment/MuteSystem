@@ -115,5 +115,4 @@ class Main extends PluginBase {
         $this->getLogger()->info("MuteSystem is now disabled. Did the server stop?");
     }
 }
-}
 
