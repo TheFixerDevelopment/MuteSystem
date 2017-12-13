@@ -9,6 +9,7 @@ use mutesystem\UnMuteIPCommand;
 use mutesystem\MuteCommand;
 use mutesystem\MuteIPCommand;
 use mutesystem\MuteListCommand;
+use mutesystem\listener\PlayerChatListener;
 use pocketmine\event\Listener;
 use pocketmine\permission\Permission;
 use pocketmine\plugin\Plugin;
