@@ -1,6 +1,6 @@
 <?php
 
-namespace bansystem\command;
+namespace mutesystem;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
