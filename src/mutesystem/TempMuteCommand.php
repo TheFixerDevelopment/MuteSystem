@@ -11,13 +11,13 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\utils\TextFormat;
 
-class TMuteCommand extends Command {
+class TempMuteCommand extends Command {
     
     public function __construct() {
-        parent::__construct("tmute");
+        parent::__construct("tempmute");
         $this->description = "Temporarily prevents the player from sending chat message.";
-        $this->usageMessage = "/tmute <player> <timeFormat> [reason...]";
-        $this->setPermission("bansystem.command.tempmute");
+        $this->usageMessage = "/tempmute [player] [timeFormat] [reason...]";
+        $this->setPermission("mutesystem.command.tempmute");
     }
     
     public function execute(CommandSender $sender, string $commandLabel, array $args) {
