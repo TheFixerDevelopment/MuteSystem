@@ -1,6 +1,6 @@
 <?php
 
-namespace bansystem\util;
+namespace mutesystem\util;
 
 class ArrayPage {
     
