@@ -30,13 +30,14 @@ class Main extends PluginBase {
             $this->removeCommand($commands[$i]);
         }
         $commandMap = $this->getServer()->getCommandMap();
-        $commandMap->registerAll("bansystem", array(
+        $commandMap->registerAll("mutesystem", array(
             new TempMuteCommand(),
             new TempMuteIPCommand(),
             new UnMuteCommand(),
             new UnMuteIPCommand(),
             new MuteCommand(),
             new MuteIPCommand(),
+            new MuteListCommand();
         ));
     }
     
@@ -80,12 +81,13 @@ class Main extends PluginBase {
     
     private function initializePermissions() {
         $this->addPermissions(array(
-            new Permission("mutesystem.command.tempmute", "Allows the player to prevent the given player to use this server.", Permission::DEFAULT_OP),
-            new Permission("mutesystem.command.tempmuteip", "Allows the player to prevent the given IP address to use this server.", Permission::DEFAULT_OP),
-            new Permission("mutesystem.command.unmute", "Allows the player to view the players/IP addresses banned on this server.", Permission::DEFAULT_OP),
-            new Permission("mutesystem.command.unmuteip", "Allows the player to view all the players/IP addresses banned from this server."),
-            new Permission("mutesystem.command.mute", "Allows the player to remove the given player.", Permission::DEFAULT_OP),
+            new Permission("mutesystem.command.tempmute", "Allows the player to tempmute a user.", Permission::DEFAULT_OP),
+            new Permission("mutesystem.command.tempmuteip", "Allows the player to tempmute a player via ip.", Permission::DEFAULT_OP),
+            new Permission("mutesystem.command.unmute", "Allows the player to Unmute a user.", Permission::DEFAULT_OP),
+            new Permission("mutesystem.command.unmuteip", "Allows the player to unmute a player via IP."),
+            new Permission("mutesystem.command.mute", "Allows the player to Mute a user.", Permission::DEFAULT_OP),
             new Permission("mutesystem.command.muteip", "Allows the player to prevent the given player from sending public chat message.", Permission::DEFAULT_OP),
+            new Permission("mutesystem.command.mutelist". "Allows to see a list of muted players.
         ));
     }
     
