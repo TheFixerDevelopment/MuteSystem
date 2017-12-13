@@ -1,10 +1,9 @@
 <?php
 
-namespace bansystem\command;
+namespace mutesystem;
 
-use bansystem\Manager;
-use bansystem\translation\Translation;
-use bansystem\util\date\Countdown;
+use mutesystem\translation\Translation;
+use mutesystem\util\date\Countdown;
 use DateTime;
 use InvalidArgumentException;
 use pocketmine\command\Command;
