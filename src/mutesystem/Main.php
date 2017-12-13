@@ -107,7 +107,6 @@ class Main extends PluginBase {
         $this->initializeListeners();
         $this->initializePermissions();
         $this->initializeFiles();
-        $this->removeBanExpired();
     }
     
     public function onDisable() {
