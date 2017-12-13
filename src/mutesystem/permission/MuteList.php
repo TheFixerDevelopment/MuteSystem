@@ -25,9 +25,9 @@ class MuteList extends BanList {
      */
     public function addBan(string $target, string $reason = null, \DateTime $expires = null, string $source = null) : BanEntry{
         $entry = new MuteEntry($target);
-        $entry->setReason($reason ?? $entry->getReason());
-        $entry->setExpires($expires);
         $entry->setSource($source ?? $entry->getSource());
+        $entry->setExpires($expires);
+        $entry->setReason($reason ?? $entry->getReason());
         parent::addBan($entry->getName(), $entry->getReason(), $entry->getExpires(), $entry->getSource());
     }
 }
