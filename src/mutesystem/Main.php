@@ -4,9 +4,11 @@ namespace mutesystem;
 
 use mutesystem\TempMuteCommand;
 use mutesystem\TempMuteIPCommand;
-use mutesystem\MuteCommand;
 use mutesystem\UnMuteCommand;
 use mutesystem\UnMuteIPCommand;
+use mutesystem\MuteCommand;
+use mutesystemzMuteIPCommand;
+use mutesystem\MuteListCommand;
 use pocketmine\event\Listener;
 use pocketmine\permission\Permission;
 use pocketmine\plugin\Plugin;
@@ -87,7 +89,7 @@ class Main extends PluginBase {
             new Permission("mutesystem.command.unmuteip", "Allows the player to unmute a player via IP."),
             new Permission("mutesystem.command.mute", "Allows the player to Mute a user.", Permission::DEFAULT_OP),
             new Permission("mutesystem.command.muteip", "Allows the player to prevent the given player from sending public chat message.", Permission::DEFAULT_OP),
-            new Permission("mutesystem.command.mutelist". "Allows to see a list of muted players.", Permission::DEFAULT_OP),
+            new Permission("mutesystem.command.mutelist", "Allows to see a list of muted players.", Permission::DEFAULT_OP),
         ));
     }
     
