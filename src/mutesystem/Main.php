@@ -2,8 +2,8 @@
 
 namespace mutesystem;
 
-use mutesystem\TMuteCommand;
-use mutesystem\TMuteIPCommand;
+use mutesystem\TempMuteCommand;
+use mutesystem\TempMuteIPCommand;
 use mutesystem\MuteCommand;
 use mutesystem\UnMuteCommand;
 use mutesystem\UnMuteIPCommand;
