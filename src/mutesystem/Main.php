@@ -39,7 +39,7 @@ class Main extends PluginBase {
             new UnMuteIPCommand(),
             new MuteCommand(),
             new MuteIPCommand(),
-            new MuteListCommand();
+            new MuteListCommand(),
         ));
     }
     
