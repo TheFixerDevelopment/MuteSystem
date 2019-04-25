@@ -3,5 +3,5 @@ name: MuteSystem
 main: mutesystem\Main
 version: 0.0.1-ALPHA
 author: VMPE Development Team
-api: [3.0.0-ALPHA9, 3.0.0-ALPHA10]
+api: [3.0.0]
 description: A Mute system for Pocketmine only, running Latest PMMP-Builds.
